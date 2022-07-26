@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<nav lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing - Best Apparels Online Store</title>
+
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>    
+    <nav class="navbar"></nav>
+    <header class="hero-section">
+    <div class="content">
+        <img src="./images/img/light-logo.png" class="logo" alt="">
+        <p class="sub-heading">best fashion collection of all time</p>
+    </div>
+    </header>
+    
+    <section id="men-tshirt-products"></section>
+
+    <section class="collection-container">
+        <a class="collection" href="#">
+            <img src="./images/img/women-collection.png" alt="">
+            <p class="collection-title">women <br> apparels</p>
+        </a>
+        <a class="collection" href="#">
+            <img src="./images/img/men-collection.png" alt="">
+            <p class="collection-title">men <br> apparels</p>
+        </a>
+        <a class="collection" href="#">
+            <img src="./images/img/accessories-collection.png" alt="">
+            <p class="collection-title">accessories </p>
+        </a>
+
+    </section>
+
+    <section id="men-tshirt-products-2"></section>
+
+  
+    <footer></footer>
+    <script src="./js/nav.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/token.js"></script>
+    <script src="./js/home.js"></script>
+
+    <script>
+        getProducts('Men Tshirt').then(data=>createProductSlider(data,'#men-tshirt-products','Men T-shirt'))
+        getProducts('Men Tshirt').then(data=>createProductSlider(data,'#men-tshirt-products','Men T-shirt-2'))
+    </script>
+
+</body>
+</html>
